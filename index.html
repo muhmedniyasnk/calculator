@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <section >
+        <div class="containe">
+            <div class="display"><input type="text" id="display" placeholder="Enter"></div>
+            <div class="buttons">
+                <div onclick="clearbox()" class="button" id="">C</div>
+                <div onclick="buttonclick('/')" class="button">/</div>
+                <div onclick="buttonclick('*')" class="button" id="mul">*</div>
+                <div onclick="removelast()" class="button">&larr;</div>
+                <div onclick="buttonclick(7)" class="button" id="seven">7</div>
+                <div onclick="buttonclick(8)" class="button" id="eight">8</div>
+                <div onclick="buttonclick(9)" class="button">9</div>
+                <div onclick="buttonclick('-')" class="button">-</div>
+                <div onclick="buttonclick(4)" class="button">4</div>
+                <div onclick="buttonclick(5)" class="button">5</div>
+                <div onclick="buttonclick(6)" class="button">6</div>
+                <div onclick="buttonclick('+')" class="button">+</div>
+                <div onclick="buttonclick(1)" class="button">1</div>
+                <div onclick="buttonclick(2)" class="button">2</div>
+                <div onclick="buttonclick(3)" class="button">3</div>
+                <div onclick="buttonclick('.')" class="button">.</div>
+                <div onclick="buttonclick(C)" class="button">(</div>
+                <div onclick="buttonclick(0)" class="button">0</div>
+                <div onclick="buttonclick(C)" class="button">)</div>
+                <div onclick="evaluateExpression()" id="equal" class="button">=</div>
+
+
+            </div>
+        </div>
+    </section>
+ <script src="./index.js"></script>   
+</body>
+</html>
